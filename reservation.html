@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Reserve our clubhouse for your event using our straightforward reservation form. Provide your details, select your preferred date, and secure your booking easily." />
+    <meta name="keywords"
+        content="clubhouse reservation, event booking, reserve clubhouse, online reservation, event venue, booking form, event planning, secure booking, venue reservation, clubhouse rental" />
+    <link rel="shortcut icon" href="favicon/reservation/favicon-32x32.png" type="image/x-icon" />
+    <title>Reservation Form</title>
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+
+        h1 {
+            color: azure;
+            /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+        }
+        button{
+            padding: 0.5rem;
+            color: rgb(231, 49, 49);
+            font-weight: 700;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body style="background-color: rgb(108, 53, 163)">
+    <center>
+        <h1>CLUB-HOUSE Reservation Form</h1>
+        <form action="">
+            <div class="form">
+                <label for="fname">First Name:</label>
+                <input type="text" class="fname" id="fname" required /><br /><br />
+                <label for="Lname">Last Name:</label>
+                <input type="text" class="Lname" id="Lname" required /><br /><br />
+                <label for="phnumber">Phone Number:</label>
+                <input type="tel" name="phnumber" id="phnumber" required /><br /><br />
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required /><br /><br />
+                <label for="guest">Number Of Guest:</label>
+                <select name="guest" id="guest">
+                    <option value="Single">Single</option>
+                    <option value="Couple">Couple</option>
+                    <option value="Nuclear Family">Nuclear Family</option>
+                    <option value="More members">More members</option>
+                </select><br /><br />
+                <label for="datatime">Data & Time:</label>
+                <input type="date" name="datatime" id="datatime" required/>
+                <input type="time" name="datatime" id="datatime" required/><br /><br />
+                <label for="restrict">Restriction</label>
+                <textarea name="restrict" id="restrict" cols="70" rows="15">
+                Approved guests:Guests should respect the approved number of guests and should ask their Host if they're unsure about the rules for visitors. Disruptive gatherings are always prohibited. Learn more in our Community Disturbance Policy.
+                Check-in time:Guests should respect their Host’s check-in window and should not check in before or after the designated window without prior approval from the Host.
+                Checkout time: Guests should complete checkout, including key return, by the designated checkout time indicated on the Airbnb reservation, and should not leave belongings at the listing past the designated checkout time for storage or later pickup without prior approval from the Host.
+                Noise: Guests should respect designated quiet hours and should not disturb the surrounding community with a disruptive level of noise (loud music, shouting, slamming doors, etc.).
+                Commercial film and photography: Guests should not participate in film or photography that is intended for commercial use or profit, without documented permission from the Host.
+                </textarea><br><br>
+                <label for="preference">Preference</label>
+                <textarea name="preference" id="preference" cols="70" rows="4">
+
+                </textarea><br><br>
+                <button type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>
